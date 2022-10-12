@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Choose the game level</h1>
+    <div class="buttons-container">
+      <button onclick="chooseLevel(EASY_LEVEL_TABLE)">Easy</button>
+      <button onclick="chooseLevel(HURD_LEVEL_TABLE)">Hurd</button>
+      <button onclick="chooseLevel(EXTREME_LEVEL_TABLE)">Extreme</button>
+    </div>
+    <div class="timer-container">
+      <p><span class="minuts"></span><span class="seconds"></span>:<span class="milliseconds"></span></p>
+    </div>
+    <div class="table-container">
+      <table>
+        <tbody></tbody>
+      </table>
+    </div>
+    <button class="reset-btn" onclick="intGame()">Restart Game</button>
+    <h2></h2>
+    <script src="js/util.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
